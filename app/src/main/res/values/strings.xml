@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Score keeper</string>
-    <string name="AM_t_contact">Contacts:</string>
+    <string name="AM_t_contact">Contact:</string>
     <string name="AM_text_t_contactvalue" translatable="false">(+49) 919191919</string>
     <string name="AM_t_address">Address:</string>
     <string name="AM_text_t_addressvalue">Plaza Street no.57</string>
