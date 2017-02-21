@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Score keeper</string>
+    <string name="AM_t_contact">Contacts:</string>
+    <string name="AM_text_t_contactvalue" translatable="false">(+49) 919191919</string>
+    <string name="AM_t_address">Address:</string>
+    <string name="AM_text_t_addressvalue">Plaza Street no.57</string>
+    <string name="AM_t_work_schedule">Office Work\nSchedule:</string>
+    <string name="AM_text_t_workschedulevalue">Monday - Friday\n9AM to 6PM</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+    <string name="back_button_name">Back</string>
+    <string name="reset_button_name">Reset</string>
+    <string name="send_result_button_name">Send Result</string>
+    <string name="set_button_name">Set</string>
+    <string name="team_a_s_name_hint">Team A\'s name</string>
+    <string name="team_b_s_name_hint">Team B\'s name</string>
+    <string name="foul_name">Foul</string>
+    <string name="yellow_card_name">Yellow Card</string>
+    <string name="red_card_name">Red Card</string>
+    <string name="settings_name">Settings</string>
+    <string name="goal_name">Goal</string>
+    <string name="_3_points_name">+3 points</string>
+    <string name="_2_points_name">+2 points</string>
+    <string name="free_throw_name">Free throw</string>
+    <string name="app_title">Sports Score Keeper</string>
+    <string name="sport1">Football</string>
+    <string name="sport2">American Football</string>
+    <string name="sport3">Basketball</string>
+    <string name="touchdown_name">Touchdown</string>
+    <string name="fieldgoal_name">FieldGoal</string>
+    <string name="extra_point_name">Extra Point</string>
+</resources>

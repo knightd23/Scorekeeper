@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/View_match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.scorekeeper.FootballActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_football"
+        style="@style/View_match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cmpfutebol" />
+
+        <LinearLayout
+            android:id="@+id/score"
+            style="@style/View_match_wrap_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/TeamA"
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/View_match_wrap_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/margin_padding_2">
+
+                        <TextView
+                            android:id="@+id/team_a_foulscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/foul_name"
+                            android:textColor="@color/color_greenfut" />
+
+                        <TextView
+                            android:id="@+id/team_a_foulscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_greenfut" />
+
+                        <TextView
+                            android:id="@+id/team_a_ycardscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/yellow_card_name"
+                            android:textColor="@color/color_yellowfut" />
+
+                        <TextView
+                            android:id="@+id/team_a_ycardscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_yellowfut" />
+
+                        <TextView
+                            android:id="@+id/team_a_rcardscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/red_card_name"
+                            android:textColor="@color/color_redfut" />
+
+                        <TextView
+                            android:id="@+id/team_a_rcardscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_redfut" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_TeamA_name"
+                            style="@style/txt_team_names_layout_MW_gravity_CH"
+                            android:padding="@dimen/margin_padding_2"
+                            android:text="@string/team_a_name" />
+
+                        <TextView
+                            android:id="@+id/team_a_score"
+                            style="@style/txt_score_teamss_layout_MW_gravity_CH"
+                            android:paddingBottom="@dimen/margin_padding_3"
+                            android:text="0" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_goalA"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:onClick="bt_goalA"
+                    android:text="@string/goal_name" />
+
+                <Button
+                    android:id="@+id/bt_FoulA"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_FoulA"
+                    android:text="@string/foul_name" />
+
+                <Button
+                    android:id="@+id/bt_ycardA"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_ycardA"
+                    android:text="@string/yellow_card_name" />
+
+                <Button
+                    android:id="@+id/bt_rcardA"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_rcardA"
+                    android:text="@string/red_card_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_padding_2"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    style="@style/txt_team_names_layout_MW_gravity_CH"
+                    android:text="@string/settings_name" />
+
+                <EditText
+                    android:id="@+id/ed_teamA_name"
+                    style="@style/edit_text_config"
+                    android:hint="@string/team_a_s_name_hint"
+                    android:maxLength="7"
+                    android:textColor="@color/color_greenfut"
+                    android:textColorHint="@color/color_greenfut"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bt_setteamA_name"
+                    style="@style/button_set"
+                    android:onClick="bt_setteamA_name"
+                    android:text="@string/set_button_name"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_padding_2"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/TeamB"
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/View_match_wrap_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_TeamB_name"
+                            style="@style/txt_team_names_layout_MW_gravity_CH"
+                            android:padding="@dimen/margin_padding_2"
+                            android:text="@string/team_b_name" />
+
+                        <TextView
+                            android:id="@+id/team_b_score"
+                            style="@style/txt_score_teamss_layout_MW_gravity_CH"
+                            android:paddingBottom="@dimen/margin_padding_3"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/margin_padding_2">
+
+                        <TextView
+                            android:id="@+id/team_b_foulscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/foul_name"
+                            android:textColor="@color/color_greenfut" />
+
+                        <TextView
+                            android:id="@+id/team_b_foulscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_greenfut" />
+
+                        <TextView
+                            android:id="@+id/team_b_ycardscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/yellow_card_name"
+                            android:textColor="@color/color_yellowfut" />
+
+                        <TextView
+                            android:id="@+id/team_b_ycardscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_yellowfut" />
+
+                        <TextView
+                            android:id="@+id/team_b_rcardscore"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="@string/red_card_name"
+                            android:textColor="@color/color_redfut" />
+
+                        <TextView
+                            android:id="@+id/team_b_rcardscore_value"
+                            style="@style/View_match_wrap_parent_gravity_CH_Size"
+                            android:text="0"
+                            android:textColor="@color/color_redfut" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_goalB"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:onClick="bt_goalB"
+                    android:text="@string/goal_name" />
+
+                <Button
+                    android:id="@+id/bt_FoulB"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_FoulB"
+                    android:text="@string/foul_name" />
+
+                <Button
+                    android:id="@+id/bt_ycardB"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_ycardB"
+                    android:text="@string/yellow_card_name" />
+
+                <Button
+                    android:id="@+id/bt_rcardB"
+                    style="@style/button_match_wrap_mlefright_Size"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_rcardB"
+                    android:text="@string/red_card_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_padding_2"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    style="@style/txt_team_names_layout_MW_gravity_CH"
+                    android:text="@string/settings_name" />
+
+                <EditText
+                    android:id="@+id/ed_teamB_name"
+                    style="@style/edit_text_config"
+                    android:hint="@string/team_b_s_name_hint"
+                    android:maxLength="7"
+                    android:textColor="@color/color_greenfut"
+                    android:textColorHint="@color/color_greenfut"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bt_setteamB_name"
+                    style="@style/button_set"
+                    android:onClick="bt_setteamB_name"
+                    android:text="@string/set_button_name"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/score"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/menu_buttons"
+                    android:onClick="back_main"
+                    android:text="@string/back_button_name" />
+
+                <Button
+                    style="@style/menu_buttons"
+                    android:onClick="reset_result"
+                    android:text="@string/reset_button_name" />
+
+                <Button
+                    style="@style/menu_buttons"
+                    android:onClick="send_result"
+                    android:text="@string/send_result_button_name" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

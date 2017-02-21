@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_red</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/color_red</item>
+        <item name="android:buttonStyle">@style/ButtonColor</item>
+    </style>
+
+    <style name="ButtonColor" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BasktTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_orange</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/color_orange</item>
+    </style>
+
+    <style name="FootballTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_green</item>
+        <item name="android:textColor">@color/color_greenfut</item>
+        <item name="android:textColorHint">@color/color_greenfut</item>
+        <!-- Background color of buttons in the app -->
+        <item name="android:buttonStyle">@style/ButtonColor_fut</item>
+
+    </style>
+
+    <style name="ButtonColor_fut" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:backgroundTint">@color/color_greenfut</item>
+    </style>
+
+
+    <style name="AmericanFootTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/color_orange</item>
+        <!-- Background color of buttons in the app -->
+        <item name="android:buttonStyle">@style/ButtonColor_AMfut</item>
+    </style>
+
+    <style name="ButtonColor_AMfut" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/color_brownamfut</item>
+        <item name="android:backgroundTint">@color/color_darkbrown</item>
+    </style>
+
+    <style name="txt_team_names" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/color_grey</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="txt_team_names_layout_MW_gravity_CH" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/color_grey</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="txt_score_teams" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">56sp</item>
+        <item name="android:color">@color/color_black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="txt_score_teamss_layout_MW_gravity_CH" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">56sp</item>
+        <item name="android:color">@color/color_black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="AM_layout_margin1" parent="@android:style/TextAppearance.Medium">6
+        <item name="android:layout_marginLeft">@dimen/margin_padding_2</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_2</item>
+        <item name="android:layout_marginTop">@dimen/margin_padding_1</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_1</item>
+    </style>
+
+    <style name="AM_table_image_config" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">@dimen/AM_size_image</item>
+        <item name="android:layout_height">@dimen/AM_size_image</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="AM_text_t_wrapbold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/AM_size_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/AM_size_table_padding</item>
+    </style>
+
+    <style name="AM_text_t_wrapvalue" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/AM_size_text</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/AM_size_table_padding</item>
+    </style>
+
+    <style name="View_match_parent" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="View_match_wrap_parent" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="View_match_wrap_parent_gravity_CH_Size" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="button_match_wrap_mlefright_Size" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_3</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="button_set" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_3</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_3</item>
+    </style>
+
+    <style name="menu_buttons" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">@dimen/margin_padding_0</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edit_text_config" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_2</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_2</item>
+        <item name="android:layout_marginTop">@dimen/margin_padding_1</item>
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:ems">10</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+
+</resources>

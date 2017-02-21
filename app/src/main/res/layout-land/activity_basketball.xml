@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.android.scorekeeper.BasketballActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_basketball"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/margin_padding_1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/margin_padding_1"
+        tools:context="com.example.android.scorekeeper.BasketballActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/TeamA"
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_TeamA_name"
+                    style="@style/txt_team_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_padding_2"
+                    android:text="@string/team_a_name" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/txt_score_teams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/margin_padding_3"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_3pointsA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:onClick="bt_3pointsA"
+                    android:text="@string/_3_points_name" />
+
+                <Button
+                    android:id="@+id/bt_2pointsA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_2pointsA"
+                    android:text="@string/_2_points_name" />
+
+                <Button
+                    android:id="@+id/bt_1pointA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_1pointA"
+                    android:text="@string/free_throw_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_padding_2"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    style="@style/txt_team_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_padding_2"
+                    android:text="@string/settings_name" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1">
+
+                    <EditText
+                        android:id="@+id/ed_teamA_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:cursorVisible="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/team_a_s_name_hint"
+                        android:lines="1"
+                        android:maxLength="15"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/bt_setteamA_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="bt_setteamA_name"
+                        android:text="@string/set_button_name" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_padding_2"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/TeamB"
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                tools:context="com.example.android.courtcounter.MainActivity">
+
+                <TextView
+                    android:id="@+id/txt_TeamB_name"
+                    style="@style/txt_team_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_padding_2"
+                    android:text="@string/team_b_name" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/txt_score_teams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/margin_padding_3"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_3pointsB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:onClick="bt_3pointsB"
+                    android:text="@string/_3_points_name" />
+
+                <Button
+                    android:id="@+id/bt_2pointsB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_2pointsB"
+                    android:text="@string/_2_points_name" />
+
+                <Button
+                    android:id="@+id/bt_1pointB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1"
+                    android:onClick="bt_1pointB"
+                    android:text="@string/free_throw_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_padding_2"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    style="@style/txt_team_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_padding_2"
+                    android:text="@string/settings_name" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_3"
+                    android:layout_marginRight="@dimen/margin_padding_3"
+                    android:layout_marginTop="@dimen/margin_padding_1">
+
+                    <EditText
+                        android:id="@+id/ed_teamB_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:cursorVisible="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/team_b_s_name_hint"
+                        android:lines="1"
+                        android:maxLength="15"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/bt_setteamB_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="bt_setteamB_name"
+                        android:text="@string/set_button_name" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/basketball_ball"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/basketball"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_padding_3">
+
+
+            <Button
+                style="@style/menu_buttons"
+                android:onClick="back_main"
+                android:text="@string/back_button_name" />
+
+            <Button
+                style="@style/menu_buttons"
+                android:onClick="reset_result"
+                android:text="@string/reset_button_name" />
+
+            <Button
+                style="@style/menu_buttons"
+                android:onClick="send_result"
+                android:text="@string/send_result_button_name" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
