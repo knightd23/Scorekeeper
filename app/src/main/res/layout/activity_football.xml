@@ -14,16 +14,6 @@
         android:focusableInTouchMode="true">
 
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cmpfutebol" />
-
         <LinearLayout
             android:id="@+id/score"
             style="@style/View_match_wrap_parent"
@@ -52,13 +42,13 @@
                             android:id="@+id/team_a_foulscore"
                             style="@style/View_match_wrap_parent_gravity_CH_Size"
                             android:text="@string/foul_name"
-                            android:textColor="@color/color_greenfut" />
+                            android:textColor="@color/color_green" />
 
                         <TextView
                             android:id="@+id/team_a_foulscore_value"
                             style="@style/View_match_wrap_parent_gravity_CH_Size"
                             android:text="0"
-                            android:textColor="@color/color_greenfut" />
+                            android:textColor="@color/color_green" />
 
                         <TextView
                             android:id="@+id/team_a_ycardscore"
@@ -147,8 +137,8 @@
                     style="@style/edit_text_config"
                     android:hint="@string/team_a_s_name_hint"
                     android:maxLength="7"
-                    android:textColor="@color/color_greenfut"
-                    android:textColorHint="@color/color_greenfut"
+                    android:textColor="@color/color_green"
+                    android:textColorHint="@color/color_green"
                     android:textSize="12sp" />
 
                 <Button
@@ -209,13 +199,13 @@
                             android:id="@+id/team_b_foulscore"
                             style="@style/View_match_wrap_parent_gravity_CH_Size"
                             android:text="@string/foul_name"
-                            android:textColor="@color/color_greenfut" />
+                            android:textColor="@color/color_green" />
 
                         <TextView
                             android:id="@+id/team_b_foulscore_value"
                             style="@style/View_match_wrap_parent_gravity_CH_Size"
                             android:text="0"
-                            android:textColor="@color/color_greenfut" />
+                            android:textColor="@color/color_green" />
 
                         <TextView
                             android:id="@+id/team_b_ycardscore"
@@ -286,8 +276,8 @@
                     style="@style/edit_text_config"
                     android:hint="@string/team_b_s_name_hint"
                     android:maxLength="7"
-                    android:textColor="@color/color_greenfut"
-                    android:textColorHint="@color/color_greenfut"
+                    android:textColor="@color/color_green"
+                    android:textColorHint="@color/color_green"
                     android:textSize="12sp" />
 
                 <Button
@@ -300,6 +290,14 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/basketball_ball"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/football"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"/>
 
         <RelativeLayout
             android:layout_width="match_parent"

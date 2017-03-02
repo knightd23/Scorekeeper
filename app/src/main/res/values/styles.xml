@@ -31,16 +31,16 @@
     <style name="FootballTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_green</item>
-        <item name="android:textColor">@color/color_greenfut</item>
-        <item name="android:textColorHint">@color/color_greenfut</item>
+        <item name="android:textColor">@color/color_green</item>
+        <item name="android:textColorHint">@color/color_green</item>
         <!-- Background color of buttons in the app -->
         <item name="android:buttonStyle">@style/ButtonColor_fut</item>
 
     </style>
 
     <style name="ButtonColor_fut" parent="@android:style/Widget.Button">
-        <item name="android:textColor">@color/color_black</item>
-        <item name="android:backgroundTint">@color/color_greenfut</item>
+        <item name="android:textColor">@color/color_greenfut</item>
+        <item name="android:backgroundTint">@color/color_green</item>
     </style>
 
 
